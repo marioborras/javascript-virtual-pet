@@ -1,16 +1,16 @@
-   // Add a variable "pet" equal to a object with the name (string), weight (number), and happiness (number) of your pet
-   const pet = {
+ // Add a variable "pet" equal to a object with the name (string), weight (number), and happiness (number) of your pet
+const pet = {
     name: "Sparky",
     weight: 6,
-    happiness: 0,
-    }
-        // Updates your HTML with the current values in your pet dictionary
-        const updatePetInfoInHtml = () => {
-          document.querySelector(".name").textContent = pet.name
-          document.querySelector(".weight").textContent = pet.weight
-          document.querySelector(".happiness").textContent = pet.happiness
-    
-        }
+    happiness:
+}
+// Updates your HTML with the current values in your pet dictionary
+const updatePetInfoInHtml = () => {
+   document.querySelector(".name").textContent = pet.name
+   document.querySelector(".weight").textContent = pet.weight
+   document.querySelector(".happiness").textContent = pet.happiness  
+ }
+
 const checkWeightAndHappinessBeforeUpdating =() => {
   // Add conditional so if weight is lower than zero, set it back to zero  
   if (pet.weight <= 0) {
@@ -49,19 +49,19 @@ const checkAndUpdatePetInfoInHtml = () => {
   updatePetInfoInHtml();
 }
 
-    // Called function to update the name, happiness, and weight of our pet in our HTML
-    checkAndUpdatePetInfoInHtml();
+// Called function to update the name, happiness, and weight of our pet in our HTML
+checkAndUpdatePetInfoInHtml();
   
-    // When each button is clicked, it will "call" function for that button (functions are below)
-    document.querySelector("#treat-button").addEventListener("click",()=>{
-      clickedTreatButton()
-    })
-    document.querySelector("#play-button").addEventListener("click",()=>{
-      clickedPlayButton()
-    })
-    document.querySelector("#exercise-button").addEventListener("click",( )=> {
-      clickedExerciseButton()
-    })
+// When each button is clicked, it will "call" function for that button (functions are below)
+document.querySelector("#treat-button").addEventListener("click",()=>{
+ clickedTreatButton()
+})
+document.querySelector("#play-button").addEventListener("click",()=>{
+ clickedPlayButton()
+})
+document.querySelector("#exercise-button").addEventListener("click",( )=> {
+ clickedExerciseButton()
+ })
   
     
     
